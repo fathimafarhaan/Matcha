@@ -1,0 +1,162 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loading, .error, .success {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.loading {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.resume-container {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.score {
+  font-size: 24px;
+  color: #2196f3;
+  margin: 0;
+}
+
+.csv-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.csv-btn:hover {
+  background-color: #43a047;
+}
+
+.candidate-info {
+  margin-bottom: 25px;
+}
+
+.candidate-info h3 {
+  margin-bottom: 15px;
+  color: #0a0101;
+  font-size: 18px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #0b0101;
+}
+
+.info-value {
+  padding: 8px;
+  background-color: #f0f4f8; /* slightly darker background for better contrast */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #111; /* dark text */
+}
+
+.skills-section, .education-section {
+  margin-bottom: 25px;
+}
+
+.skills-section h3, .education-section h3 {
+  margin-bottom: 15px;
+  color: #2c1414;
+  font-size: 18px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.education-item {
+  background-color: #f0f4f8; /* consistent with info-value */
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #111;
+}
+
+.resume-text {
+  background-color: #130e0e; /* softer grey */
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111; /* readable dark text */
+}

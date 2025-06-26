@@ -1,0 +1,247 @@
+/* Apply background color to the entire page */
+body {
+  background: linear-gradient(135deg, #0d0d26, #1a1a2e);
+  color: #d0d0d0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column; /* Ensures elements are stacked properly */
+}
+
+/* General container styling for dashboards */
+.dashboard-container, .recruiter-dashboard-container {
+  background: rgba(26, 26, 46, 0.9);
+  color: #d0d0d0;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+  text-align: left;
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 1px solid #3d3d5c;
+}
+
+/* Dashboard Headings */
+.dashboard-container h2, .recruiter-dashboard-container h2 {
+  color: #a3a3ff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Buttons */
+.dashboard-button, .recruiter-button {
+  background: #5c00e6;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  margin-top: 12px;
+  box-shadow: 0px 4px 8px rgba(92, 0, 230, 0.3);
+  width: 100%;
+  max-width: 200px;
+}
+
+.dashboard-button:hover, .recruiter-button:hover {
+  background: #3d0099;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(92, 0, 230, 0.5);
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #ff3333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+  max-width: 150px;
+}
+
+.logout-btn:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+
+/* Table styling */
+.dashboard-table, .recruiter-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(37, 37, 71, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #3d3d5c;
+}
+
+.dashboard-table th, .dashboard-table td, 
+.recruiter-table th, .recruiter-table td {
+  border: 1px solid #3d3d5c;
+  padding: 12px;
+  text-align: left;
+}
+
+.dashboard-table th, .recruiter-table th {
+  background: #5c00e6;
+  color: #fff;
+  font-weight: 600;
+}
+
+.dashboard-table td, .recruiter-table td {
+  background: #1f1f3d;
+  color: #f1ecec;
+}
+
+/* Form container */
+.form-container {
+  background: rgba(37, 37, 71, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.1);
+  margin-top: 25px;
+  border: 1px solid #3d3d5c;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #5c00e6;
+  border-radius: 6px;
+  background: #1f1f3d;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus {
+  border-color: #f1f1f6;
+  box-shadow: 0px 0px 8px rgba(243, 243, 245, 0.6);
+}
+
+/* Login container */
+.login-container {
+  background: rgba(26, 26, 46, 0.95);
+  color: #e0e0e0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 60px auto;
+  border: 1px solid #3d3d5c;
+}
+
+/* Login form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Login button */
+.login-button {
+  background: #d633ff;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(214, 51, 255, 0.3);
+  width: 100%;
+}
+
+.login-button:hover {
+  background: #a600cc;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(214, 51, 255, 0.5);
+}
+
+/* Admin-Specific Styles */
+/* Admin-Specific Styles */
+.admin-section {
+  padding: 30px; /* Increased padding */
+  background: rgba(31, 31, 61, 0.9);
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 95%; /* Slightly increased width */
+  max-width: 1100px; /* Increased max width */
+}
+
+/* Increase font size for better readability */
+.admin-section h2 {
+  font-size: 24px;
+}
+
+.admin-section p, .admin-section label {
+  font-size: 18px;
+}
+
+.admin-section .dashboard-button {
+  font-size: 18px;
+  padding: 14px 20px;
+  max-width: 220px;
+}
+
+
+/* Recruiter-Specific Styles */
+.recruiter-section {
+  padding: 20px;
+  background: rgba(37, 37, 71, 0.9);
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Drag and Drop Box */
+.drag-drop-box {
+  background: rgba(35, 35, 55, 0.95);
+  border: 2px dashed #6666cc;
+  color: #fefcfc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Hover effect */
+.drag-drop-box:hover {
+  background: rgba(45, 45, 70, 0.95);
+  border-color: #9999ff;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container, .recruiter-dashboard-container, .login-container, .form-container {
+    width: 95%;
+    padding: 20px;
+  }
+}

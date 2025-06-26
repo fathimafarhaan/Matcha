@@ -1,0 +1,159 @@
+/* Admin Dashboard Styles - Updated for better sizing, alignment, and green download button */
+
+.dashboard {
+  max-width: 10000px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard h2 {
+  margin: 40px 0 20px;
+  font-size: 24px;
+  color: #444;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.logout-btn {
+  float: right;
+  background-color: #ef5350;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* ✅ Green Download Button to match recruiter Save CSV style */
+.download-btn {
+  display: block;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #43a047;
+}
+
+/* Form Container */
+.dashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Labels + Inputs */
+.dashboard label {
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard input[type="number"] {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 300px;
+  color: #000;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.dashboard input[type="number"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.dashboard button[type="submit"] {
+  align-self: flex-start;
+  padding: 14px 28px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard button[type="submit"]:hover {
+  background-color: #43a047;
+}
+
+/* Status Messages */
+.error, .success {
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard input[type="number"],
+  .dashboard button[type="submit"],
+  .download-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .logout-btn {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,11 @@
+# Dependencies
+/node_modules
+
+# User uploads
+/uploads
+
+# Python cache
+__pycache__/
+
+# Environment variables (if you have them)
+.env

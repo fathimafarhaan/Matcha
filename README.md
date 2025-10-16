@@ -1,4 +1,4 @@
-# 🍵 Matcha - Intelligent Resume Parser & Scorer
+# Matcha - Intelligent Resume Parser & Scorer
 
 Matcha is a full-stack web application that leverages a machine learning model to automatically parse, analyze, and score resumes. It provides a streamlined platform for candidates to upload their documents and for recruiters to efficiently evaluate candidates based on data-driven insights.
 
